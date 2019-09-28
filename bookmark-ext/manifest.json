@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "BookMarks Simplified",
+  "author": "Chetan Dasauni",
+  "version": "1.0.1",
+  "description": "Now you can view and manage all your saved bookmarks just by a click of a button. Enable the extension and click the icon to start the magic. This extension was build with the purpose of making the bookmarks easily accessible and manageable.",
+  "browser_action": {
+    "default_title": "BookMarks Simplified"
+  },
+  "content_security_policy": "script-src 'self' filesystem: http://localhost:* https://localhost:* https://apis.google.com https://ajax.googleapis.com.com https://www.google-analytics.com 'unsafe-eval'; object-src 'self'",
+  "permissions": ["storage", "bookmarks", "<all_urls>"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "icons": {
+    "16": "./static/icon.png",
+    "48": "./static/icon.png"
+  }
+}
