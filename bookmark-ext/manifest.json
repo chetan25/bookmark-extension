@@ -1,11 +1,12 @@
 {
   "manifest_version": 2,
-  "name": "BookMarks Simplified",
+  "name": "Bookmarks Simplified",
   "author": "Chetan Dasauni",
   "version": "1.0.1",
-  "description": "Now you can view and manage all your saved bookmarks just by a click of a button. Enable the extension and click the icon to start the magic. This extension was build with the purpose of making the bookmarks easily accessible and manageable.",
+  "default_locale": "en",
+  "description": "Now you can view and manage all your saved bookmarks just by a click of a button.Enable the extension and click the icon to start the magic. This extension was build with the purpose of making the bookmarks easily accessible and manageable. Currently the extension displays all your saved bookmarks in a new tab and let you View, Search and Delete bookmarks.It Automatically updates the view when you add or delete a bookmark in chrome.Keeps your default new tab view as it is and only renders on a button click.",
   "browser_action": {
-    "default_title": "BookMarks Simplified"
+    "default_title": "Bookmarks Simplified"
   },
   "content_security_policy": "script-src 'self' filesystem: http://localhost:* https://localhost:* https://apis.google.com https://ajax.googleapis.com.com https://www.google-analytics.com 'unsafe-eval'; object-src 'self'",
   "permissions": ["storage", "bookmarks", "<all_urls>"],
@@ -13,6 +14,7 @@
     "scripts": ["background.js"],
     "persistent": false
   },
+  "offline_enabled": true,
   "icons": {
     "16": "./static/icon.png",
     "48": "./static/icon.png"

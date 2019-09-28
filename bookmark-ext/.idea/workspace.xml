@@ -17,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/components/bookmarks.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="32">
-              <caret line="229" column="22" lean-forward="true" selection-start-line="229" selection-start-column="22" selection-end-line="229" selection-end-column="22" />
+              <caret line="229" column="22" selection-start-line="229" selection-start-column="22" selection-end-line="229" selection-end-column="22" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#18#59#0" expanded="true" />
@@ -28,41 +28,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manifest.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/background.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testData.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="76" column="3" selection-start-line="76" selection-start-column="3" selection-end-line="76" selection-end-column="3" />
-              <folding>
-                <element signature="e#13#2509#0" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="462">
+                <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -118,10 +91,10 @@
       <find>option</find>
       <find>oldBookmarks</find>
       <find>/</find>
-      <find>/_next</find>
       <find>top</find>
       <find>getItemWithFavicon</find>
       <find>console</find>
+      <find>/_next</find>
     </findStrings>
     <replaceStrings>
       <replace>znext</replace>
@@ -158,21 +131,21 @@
         <option value="$PROJECT_DIR$/next.config.js" />
         <option value="$PROJECT_DIR$/out/znext/static/runtime/main-ec1be9c640a81bd95307.js" />
         <option value="$PROJECT_DIR$/readme.txt" />
-        <option value="$PROJECT_DIR$/out/manifest.json" />
         <option value="$PROJECT_DIR$/background.js" />
-        <option value="$PROJECT_DIR$/out/znext/static/runtime/main.js.map" />
-        <option value="$PROJECT_DIR$/out/znext/static/runtime/main-d44f789c06d9813fcc0b.js" />
-        <option value="$PROJECT_DIR$/out/znext/static/runtime/amp.js" />
-        <option value="$PROJECT_DIR$/out/znext/static/runtime/main.js" />
-        <option value="$PROJECT_DIR$/out/znext/static/runtime/amp.js.map" />
-        <option value="$PROJECT_DIR$/out/404.html" />
-        <option value="$PROJECT_DIR$/out/index.html" />
         <option value="$PROJECT_DIR$/components/bookmarks.css" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/testData.js" />
         <option value="$PROJECT_DIR$/components/bookmarks.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/out/znext/static/runtime/main.js.map" />
+        <option value="$PROJECT_DIR$/out/znext/static/runtime/amp.js" />
+        <option value="$PROJECT_DIR$/out/znext/static/runtime/main.js" />
+        <option value="$PROJECT_DIR$/out/404.html" />
+        <option value="$PROJECT_DIR$/out/index.html" />
+        <option value="$PROJECT_DIR$/out/znext/static/runtime/amp.js.map" />
+        <option value="$PROJECT_DIR$/out/znext/static/runtime/main-d44f789c06d9813fcc0b.js" />
+        <option value="$PROJECT_DIR$/out/manifest.json" />
         <option value="$PROJECT_DIR$/manifest.json" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -194,6 +167,11 @@
               <item name="bookmark-ext" type="b2602c69:ProjectViewProjectNode" />
               <item name="bookmark-ext" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="bookmark-ext" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookmark-ext" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -209,15 +187,15 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\React-Code\bookmark-extension\bookmark-ext\out" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\React-Code\bookmark-extension\bookmark-ext\out" />
       <recent name="C:\React-Code\bookmark-extension\bookmark-ext\out\static" />
       <recent name="C:\React-Code\bookmark-extension\bookmark-ext\static" />
       <recent name="C:\React-Code\bookmark-extension\bookmark-ext\bookmark" />
       <recent name="C:\React-Code\bookmark-extension\bookmark-ext" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\React-Code\bookmark-extension\bookmark-ext\out" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -253,18 +231,18 @@
       <workItem from="1569461186615" duration="8054000" />
       <workItem from="1569505270718" duration="3751000" />
       <workItem from="1569553853557" duration="4709000" />
-      <workItem from="1569692816083" duration="5007000" />
+      <workItem from="1569692816083" duration="6145000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68126000" />
+    <option name="totallyTimeSpent" value="69264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="307" y="-1053" width="1847" height="989" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23516361" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16694398" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -339,11 +317,69 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/background.js" />
-    <entry file="file://$PROJECT_DIR$/out/znext/static/runtime/main.js.map" />
-    <entry file="file://$PROJECT_DIR$/out/znext/static/runtime/main-d44f789c06d9813fcc0b.js" />
-    <entry file="file://$PROJECT_DIR$/out/znext/static/runtime/amp.js" />
-    <entry file="file://$PROJECT_DIR$/out/znext/static/runtime/main.js" />
-    <entry file="file://$PROJECT_DIR$/out/znext/static/runtime/amp.js.map" />
+    <entry file="file://$PROJECT_DIR$/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/bookmarks.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="214" selection-start-line="214" selection-end-line="214" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="76" column="3" selection-start-line="76" selection-start-column="3" selection-end-line="76" selection-end-column="3" />
+          <folding>
+            <element signature="e#13#2509#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bookmark/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/znext/static/runtime/main.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18288">
+          <caret column="178026" selection-start-column="178026" selection-end-column="178026" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/znext/static/runtime/amp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34621">
+          <caret line="3570" column="33" selection-start-line="3570" selection-start-column="33" selection-end-line="3570" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/znext/static/runtime/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101167">
+          <caret line="7526" column="73" selection-start-line="7526" selection-start-column="73" selection-end-line="7526" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/out/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -364,48 +400,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/manifest.json" />
-    <entry file="file://$PROJECT_DIR$/pages/index.js">
+    <entry file="file://$PROJECT_DIR$/out/znext/static/runtime/amp.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5950">
+          <caret column="79867" selection-start-column="79867" selection-end-column="79867" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/znext/static/runtime/main-d44f789c06d9813fcc0b.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+          <caret column="12345" selection-start-column="12345" selection-end-column="12345" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/bookmarks.css">
+    <entry file="file://$PROJECT_DIR$/out/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="214" selection-start-line="214" selection-end-line="214" />
+        <state relative-caret-position="62">
+          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="289">
-            <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testData.js">
+    <entry file="file://$PROJECT_DIR$/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="76" column="3" selection-start-line="76" selection-start-column="3" selection-end-line="76" selection-end-column="3" />
-          <folding>
-            <element signature="e#13#2509#0" />
-          </folding>
+        <state relative-caret-position="186">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/bookmarks.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
-          <caret line="229" column="22" lean-forward="true" selection-start-line="229" selection-start-column="22" selection-end-line="229" selection-end-column="22" />
+          <caret line="229" column="22" selection-start-line="229" selection-start-column="22" selection-end-line="229" selection-end-column="22" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#18#59#0" expanded="true" />
@@ -415,31 +449,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bookmark/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/background.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="462">
+            <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

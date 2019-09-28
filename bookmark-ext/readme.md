@@ -17,3 +17,17 @@ All the css has been custom desigined as per required.
 <H1>Dev Mode</H1>
 To run the extenstion in dev mode you need to comment out the chrome usgae in the component mount method.
 Also add the test data and save it to the state.
+
+<H1>How to deploy the extension</H1>
+To deploy the extension on chrome, follow the steps :
+<ul>
+<li>Run the next build - npm run build</li>
+<li>Run the next export - npm run export</li>
+<li>Copy the manifest.josn and background.js file to the out folder created.</li>
+<li>Rename the _next folder inside out directory to znext.</li>
+<li>Find all the occurence of /_next folder in out directory and replace it with /znext.</li>
+<li>Upload the out folder to chrome extensions.</li>
+
+
+
+</ul>
