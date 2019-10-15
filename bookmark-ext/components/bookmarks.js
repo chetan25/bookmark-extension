@@ -19,7 +19,9 @@ class Bookmarks extends Component {
         oldBookmarks: [],
         bookmarks: [],
         toastMessage: null,
-        headerClass: ''
+        headerClass: '',
+        loading: true,
+        searchOn: false
     };
 
     getItemWithFavicon = (item) => {
@@ -33,20 +35,37 @@ class Bookmarks extends Component {
         };
     };
 
+    getFlattenedData = (data) => {
+        let results = [];
+        data.forEach((item) => {
+            if(item.hasOwnProperty('children')) {
+                const items = item.children.map((d) => {
+                    return this.getItemWithFavicon(d);
+                });
+                results.push(...items);
+            } else {
+                results.push(this.getItemWithFavicon(item));
+            }
+        });
+
+        return results;
+    };
+
     componentDidMount() {
-        // this.setState({bookmarks: newData});
         chrome.bookmarks.getTree((bookmarks) => {
-            const savedBookmarks = bookmarks[0].children[0].children;
+            let savedBookmarks = bookmarks[0].children[0].children;
+            savedBookmarks = this.getFlattenedData(savedBookmarks);
             savedBookmarks.sort(function (a, b) {
                 //oldest first
                 // return a.dateAdded - b.dateAdded;
                 //latest first
                 return b.dateAdded - a.dateAdded;
             });
-            const newBookmarks = savedBookmarks.map(item => {
-                return this.getItemWithFavicon(item);
+            this.setState({
+                bookmarks: savedBookmarks,
+                oldBookmarks: savedBookmarks,
+                loading: false
             });
-            this.setState({bookmarks: newBookmarks, oldBookmarks: newBookmarks});
         });
         chrome.bookmarks.onCreated.addListener(this.onBookMarkCreated);
         chrome.bookmarks.onRemoved.addListener(this.onBookMarkRemoved);
@@ -117,9 +136,9 @@ class Bookmarks extends Component {
     };
 
     handleScroll = () => {
-        let headerClass = '';
+        let headerClass = 'content-header-resize-big';
         if (window.scrollY > 29) {
-            headerClass = 'fixed-header-overlay';
+            headerClass = 'fixed-header-overlay content-header-resize-small';
         }
         this.setState({headerClass});
     };
@@ -154,28 +173,39 @@ class Bookmarks extends Component {
     };
 
     searchChange = (e) => {
+        this.setState({loading: true});
         const {oldBookmarks} = this.state;
         e.persist();
         debounce(600, () => {
             const searchString = e.target.value;
             if (searchString === '') {
-                this.setState({bookmarks: oldBookmarks});
-
+                this.setState({
+                    bookmarks: oldBookmarks,
+                    loading: false,
+                    searchOn: false
+                });
                 return;
             }
             const searchedResults = oldBookmarks.filter(item => {
                 return item.title.toLowerCase().includes(searchString.toLowerCase());
             });
-            this.setState({bookmarks: searchedResults});
+            this.setState({
+                bookmarks: searchedResults,
+                loading: false,
+                searchOn: true
+            });
         })();
     };
 
     render() {
-        const { toastMessage, headerClass } = this.state;
+        const {
+            toastMessage, headerClass,
+            bookmarks, loading, searchOn
+        } = this.state;
         return (
             <div className='bookmark-wrapper'>
                 <div className={`content-header ${headerClass}`}>
-                    <label>Saved Bookmarks</label>
+                    <label>Bookmarks</label>
                     <div className="search-container">
                         <input
                             type="text" placeholder="Search.."
@@ -189,43 +219,57 @@ class Bookmarks extends Component {
                 </div>
                 <div className='bookmark-container' id='bookmark-container'>
                     {
-                        this.state.bookmarks.map(item => {
-                            return (
-                                <div className='bookmark-item' key={item.id}>
-                                    <div className='bookmark-title'>
-                                        <div className='float-left'>
-                                            <img src={item.favicon} className='fav-img'/>
+                        bookmarks.length > 0 ?
+                            bookmarks.map(item => {
+                                return (
+                                    <div className='bookmark-item' key={item.id}>
+                                        <div className='bookmark-title'>
+                                            <div className='float-left'>
+                                                <img src={item.favicon} className='fav-img'/>
+                                            </div>
+                                            <div className='label-margin'>
+                                                {
+                                                    item.title.length <= 200 ?
+                                                        item.title : item.title.substring(0, 200) + '...'
+                                                }
+                                            </div>
                                         </div>
-                                        <div className='label-margin'>
-                                            {
-                                                item.title.length <= 200 ?
-                                                    item.title : item.title.substring(0, 200) + '...'
-                                            }
+                                        <div className='bookmark-url'>
+                                            <span>URl -- </span>
+                                            <a onClick={() => this.openBookMark(item)}>
+                                                {
+                                                    item.url.length <= 200 ?
+                                                        item.url : item.url.substring(0, 200) + '...'
+                                                }
+                                            </a>
                                         </div>
-                                    </div>
-                                    <div className='bookmark-url'>
-                                        <span>URl -- </span>
-                                        <a onClick={() => this.openBookMark(item)}>
-                                            {
-                                                item.url.length <= 200 ?
-                                                    item.url : item.url.substring(0, 200) + '...'
-                                            }
-                                        </a>
-                                    </div>
-                                    <div className='bookmark-url'>
-                                        <span>Date Added -- </span> {item.date}
+                                        <div className='bookmark-url'>
+                                            <span>Date Added -- </span> {item.date}
 
+                                        </div>
+                                        <div className='delete-icon-wrapper'>
+                                            <img
+                                                onClick={() => this.deleteBookMark(item)}
+                                                src='/static/images.png'
+                                                className='delete-icon'
+                                            />
+                                        </div>
                                     </div>
-                                    <div className='delete-icon-wrapper'>
-                                        <img
-                                            onClick={() => this.deleteBookMark(item)}
-                                            src='/static/images.png'
-                                            className='delete-icon'
-                                        />
-                                    </div>
-                                </div>
-                            )
-                        })
+                                )
+                            }) :
+                            <div className='bookmark-empty'>
+                                {
+                                    loading && !searchOn ?
+                                        <div className='loading-state'>
+                                            <div className='loader'></div>
+                                        </div> :
+                                        <div className='empty-state'>
+                                            <label>
+                                                No Bookmarks Found
+                                            </label>
+                                        </div>
+                                }
+                            </div>
                     }
                 </div>
                 <div id="toast">

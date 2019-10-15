@@ -2,13 +2,13 @@
   "manifest_version": 2,
   "name": "Bookmarks Simplified",
   "author": "Chetan Dasauni",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "default_locale": "en",
   "description": "Now you can view and manage all your saved bookmarks just by a button click.",
   "browser_action": {
     "default_title": "Bookmarks Simplified"
   },
-  "content_security_policy": "script-src 'self' filesystem: http://localhost:* https://localhost:* https://apis.google.com https://ajax.googleapis.com.com https://www.google-analytics.com 'unsafe-eval'; object-src 'self'",
+  "content_security_policy": "script-src 'self' filesystem: https://apis.google.com https://ajax.googleapis.com.com https://www.google-analytics.com; object-src 'self'",
   "permissions": ["storage", "bookmarks", "activeTab"],
   "background": {
     "scripts": ["background.js"],
