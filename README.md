@@ -1,7 +1,7 @@
 ---
-title: A simple Chrome Extension to manage Bookmarks.
-excerpt: This is an effort to learn how extensions work and builing a simple Bookmark extension using the chrome built in api and react.
-Tools: ['React', 'Chrome Api']
+Title: A simple Chrome Extension to manage Bookmarks.
+Excerpt: This is an effort to learn how extensions work and builing a simple Bookmark extension using the chrome built in api and react.
+Tech: "React, Chrome Api"
 ---
 
 # Bookmarks Simplified
@@ -13,7 +13,7 @@ This chrome extension basically lets you view and manage your bookmarks in a new
    <l1>Keeps your default new tab view as it is and only renders on a button click.</li>
 </ul>
 
-## Stac
+## Stack
 This is built with NextJs and React. It uses the static export of NextJs.
 All the css has been custom desigined as per required.
 
