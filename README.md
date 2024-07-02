@@ -1,7 +1,7 @@
 ---
-title: A simple Chrome Extension to manage Bookmarks.
-excerpt: This is an effort to learn how extensions work and builing a simple Bookmark extension using the chrome built in api and react.
-Tools: ['React', 'Chrome Api']
+Title: A simple Chrome Extension to manage Bookmarks.
+Excerpt: This is an effort to learn how extensions work and builing a simple Bookmark extension using the chrome built in api and react.
+Tech: "React, Chrome Api"
 ---
 
 # Bookmarks Simplified
